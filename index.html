@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Cryptocurrency</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="container">
+            <div class="boxsize">
+                <div id="step1">
+                    <div id="question1">
+                        <h2>1. What do you want to send?</h2>
+                    </div>
+                    <div id="options1">
+                        <div class="imgicon">
+                            <img src="img/eth.png" alt="ETH Logo" onclick="selectNetwork1('ETH')">
+                            <img src="img/bsc.webp" alt="BNB Logo" onclick="selectNetwork1('BNB')">
+                            <img src="img/arb.png" alt="ARB Logo" onclick="selectNetwork1('ARB')">
+                        </div>
+                    </div>
+                </div>
+                <div id="step2" style="display: none;">
+                    <div id="question2">
+                        <h2>2. What do you want to receive?</h2>
+                    </div>
+                    <div id="options2">
+                        <div class="imgicon">
+                            <img src="img/eth.png" alt="ETH Logo" onclick="selectNetwork2('ETH')">
+                            <img src="img/bsc.webp" alt="BNB Logo" onclick="selectNetwork2('BNB')">
+                            <img src="img/arb.png" alt="ARB Logo" onclick="selectNetwork2('ARB')">
+                        </div>
+                    </div>
+                </div>
+                <div id="step3" style="display: none;">
+                    <div id="question3">
+                        <h2>3. Enter the receiving wallet address</h2>
+                        <input type="text" id="addressinput" placeholder="Enter address">
+                        <span id="walletError" style="display: none;">Invalid wallet address</span>
+                        <span id="errorMsg" style="display: none;">Error while processing your request. please try
+                            again later</span>
+                    </div>
+                </div>
+                <div id="step4">
+                    <p>Confirmed! Please close this modal to continue</p>
+                </div>
+                <div id="networkSelection">
+                    <button id="btn1" onclick="btn1()" style="display: none;">Continue</button>
+                    <button id="btn2" onclick="btn2()" style="display: none;">Continue</button>
+                    <button id="btn3" onclick="submitForm()" style="display: none;">Continue</button>
+                    <h6 id="loading" style="display: none;">Loading...</h6>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./transaction.js"></script>
+</body>
+
+</html>

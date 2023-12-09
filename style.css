@@ -1,0 +1,100 @@
+.container {
+    max-width: 367px;
+    background: #000;
+    height: 91vh;
+    margin: 0;
+    padding: 70px 30px;
+    margin: auto;
+}
+
+body {
+    margin: 0 !important;
+}
+
+h2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.imgicon {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.imgicon img {
+    max-width: 75px;
+}
+
+.imgicon img {
+    width: 75px !important;
+    height: 75px;
+    object-fit: contain;
+}
+
+input[type="text"] {
+    width: 92%;
+    padding: 11px 12px;
+    border: none;
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    margin-left: 10px;
+}
+
+#networkSelection button, #networkSelection h6 {
+    width: 100%;
+    border-radius: 5px;
+    margin: 220px 0 0;
+    padding: 10px 0;
+    background: #e9b61f;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.imgicon img {
+    width: 75px !important;
+    height: 75px;
+    object-fit: contain;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.imgicon img:hover,
+.imgicon img.active {
+    background: #e8b51e;
+}
+
+button {
+    cursor: pointer;
+}
+
+#walletError, #errorMsg {
+    color: red;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#step4 {
+    display: none;
+    text-align: center;
+    color: #fff;
+}
+
+#step4 p {
+    font-size: 20px;
+}
